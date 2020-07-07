@@ -21,7 +21,9 @@ class HashTable:
     """
 
     def __init__(self, capacity):
-        # Your code here
+        self.capacity = capacity  # Number of buckets in the hash table
+        self.storage = [None] * capacity
+        self.length = 0
 
 
     def get_num_slots(self):
