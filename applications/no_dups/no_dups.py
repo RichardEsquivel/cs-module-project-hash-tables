@@ -1,6 +1,18 @@
 def no_dups(s):
-    # Your code here
+    # $%$Start
+    words = s.split()
 
+    seen = {}
+    result = []
+
+    for w in words:
+        if w not in seen:
+            result.append(w)
+            seen[w] = True
+
+    return " ".join(result), print(seen)
+
+    # $%$End
 
 
 if __name__ == "__main__":
